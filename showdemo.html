@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <input type="radio" value="true" name="star" v-model="show"/> 布偶
+
+        <img v-show="show==true" style="width:200px ; height:150px;" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575978036305&di=5c8c922a1d119cc695a1beba5183775e&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F24%2F20160624125032_CvWGs.jpeg"/>
+    </div>
+    <script>
+        var app = new Vue({
+            el:"#app",
+            data:{
+                    show:'flase'
+                    
+            }
+        });
+    </script>
+</body>
+</html>

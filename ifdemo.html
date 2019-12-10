@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <input type="radio" value="buou" name="star" v-model="name"/> 布偶
+        <input type="radio" value="lan" name="star" v-model="name"/> 蓝猫
+        <input type="radio" value="jia" name="star" v-model="name"/> 加菲猫
+        <img v-if="name=='buou'" style="width:200px ; height:150px;" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575978036305&di=5c8c922a1d119cc695a1beba5183775e&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F24%2F20160624125032_CvWGs.jpeg"/>
+        <img v-else-if="name=='lan'"style="width:200px ; height:150px;" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575977852919&di=396091736bd11ec727b69eed02ae75a4&imgtype=0&src=http%3A%2F%2Fimg.go007.com%2F2016%2F04%2F17%2Fc8d6aefc8f47d73a_0.jpg"/>
+        <img v-else-if="name=='jia'"style="width:200px ; height:150px;" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575977784866&di=18447f4bbe44d00c0f65fc69fe4ee2a3&imgtype=0&src=http%3A%2F%2Fimg.go007.com%2F2016%2F07%2F11%2F3374ff70d946ad29_3.jpg"/>
+        <img v-else style="width:200px ; height:150px;" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575977886353&di=157c1839ae0674794ba4642800d86713&imgtype=0&src=http%3A%2F%2Fwx1.sinaimg.cn%2Flarge%2F006Cmetyly1fhm1rnyoyoj30go0ku40r.jpg"/>
+    </div>
+    <script>
+        var app = new Vue({
+            el:"#app",
+            data:{
+                    show:'false',
+                    name:""
+            }
+        });
+    </script>
+</body>
+</html>
